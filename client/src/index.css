@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font -babeas nue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font - pt serif */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+html, body {
+  overflow: hidden;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* font-family: 'PT Serif', serif; */
+.clip-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 3vw 7vw; /* Adjust the values to control the triangle size */
+    border-color: transparent transparent transparent #d40774; /* Adjust the color as needed */
+    border-radius: 2px; /* Adjust the border-radius value for the right-angle corner */
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    animation: scroll infinite linear 30s; /* Adjust the duration as needed */
+  
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+canvas.react-pdf__Page__canvas {
+  margin-bottom: 2vw;
+}
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .bg_img{
+    background-image: url('../public/images/Nottingham.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .bg_img2{
+    background-image: url('https://images.unsplash.com/photo-1681642048507-eda6aa987b6a?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .review-item {
+    flex: 0 0 auto; /* Set the width of each review item */
+    margin-right: 2vw; /* Add margin between review items */
+  }
+  .row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-decimal{
+    list-style: disc;
+  }
+
+  #signup_container{
+    background-image: "https:///images.unsplash.com/photo-1587614382346-4ec70e388b28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D";
+  }
+
+  /* YourComponent.css or in your styled-components */
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* remove the inc dec titda of input type number */
+.spin-button-none::-webkit-outer-spin-button,
+.spin-button-none::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+  
+@media (min-width: 1366px) and (max-width: 6500px) {
+    .main_container {
+        /* max-width: 1366px; */
+        width: 100%;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+}
+@media (max-width: 1366px) {}
+@media (max-width: 768px) {
+  .res-w{
+    /* width: 100%; */
+  }
+}
+
+
+/* hop font-style */
+/* font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
